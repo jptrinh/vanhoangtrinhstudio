@@ -1,0 +1,18 @@
+html, body {
+  height: 100%; }
+
+.container-fluid {
+  height: 100%; }
+  .container-fluid .projects-preview {
+    height: 100%;
+    background-color: blueviolet; }
+    .container-fluid .projects-preview .project {
+      border: 1px solid black;
+      height: 100%;
+      background-color: aquamarine; }
+    .container-fluid .projects-preview .active {
+      background-color: antiquewhite; }
+    .container-fluid .projects-preview .not-active {
+      border: 1px solid red; }
+
+/*# sourceMappingURL=style.css.map */

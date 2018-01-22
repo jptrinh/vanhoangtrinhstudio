@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+.container-fluid {
+    height: 100%;
+    
+    .projects-preview {
+        height: 100%;
+        background-color: blueviolet;
+        
+        .project {
+            border: 1px solid black;
+            height: 100%;
+            background-color: aquamarine;
+        }
+        
+        .active {
+            background-color: antiquewhite;
+        }
+        
+        .not-active {
+            border: 1px solid red;
+        }
+    }
+}
