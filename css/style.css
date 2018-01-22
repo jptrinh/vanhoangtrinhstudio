@@ -4,15 +4,20 @@ html, body {
 .container-fluid {
   height: 100%; }
   .container-fluid .projects-preview {
-    height: 100%;
-    background-color: blueviolet; }
+    height: 100%; }
     .container-fluid .projects-preview .project {
-      border: 1px solid black;
       height: 100%;
-      background-color: aquamarine; }
-    .container-fluid .projects-preview .active {
-      background-color: antiquewhite; }
-    .container-fluid .projects-preview .not-active {
-      border: 1px solid red; }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform-style: preserve-3d; }
+      .container-fluid .projects-preview .project .project-content {
+        height: 40%;
+        width: 50%;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateZ(20px); }
 
 /*# sourceMappingURL=style.css.map */

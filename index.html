@@ -10,19 +10,34 @@
     <div class="container-fluid">
         <div class="projects-preview">
             
-            <div class="project active"><h1>Projet 1</h1></div>
-            <div class="project"><h1>Projet 2</h1></div>
-            <div class="project"><h1>Projet 3</h1></div>
+            <div class="project active">
+                <div data-tilt class="project-content">
+                   <h1>Projet 1</h1>
+                </div>
+                
+            </div>
+            <div class="project">
+                <h1>Projet 2</h1>
+            </div>
+            <div class="project">
+                <h1>Projet 3</h1>
+            </div>
             
         </div>
     </div>
 
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+<script type="text/javascript" src="js/tilt.jquery.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script>
 window.sr = ScrollReveal();
-sr.reveal('.project');    
+sr.reveal('.project', { duration: 1000, reset: true});
+sr.reveal('.project h1', { delay: 400});
+
+$('.project-content').tilt({
+    maxTilt: 5,
+});
 </script>
 </body>
 </html>

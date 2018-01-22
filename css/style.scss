@@ -1,26 +1,29 @@
 html, body {
-    height: 100%;
+    height: 100%; 
 }
 
 .container-fluid {
-    height: 100%;
+    height: 100%; 
     
     .projects-preview {
-        height: 100%;
-        background-color: blueviolet;
+    height: 100%;
         
         .project {
-            border: 1px solid black;
             height: 100%;
-            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            
+            .project-content {
+                height: 40%;
+                width: 50%;
+                background-color: aqua;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translateZ(20px);
+            }
         }
-        
-        .active {
-            background-color: antiquewhite;
-        }
-        
-        .not-active {
-            border: 1px solid red;
-        }
-    }
+    }    
 }
