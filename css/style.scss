@@ -2,8 +2,27 @@ html, body {
     height: 100%; 
 }
 
+body {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .container-fluid {
     height: 100%; 
+    
+    nav {
+        margin: 2% auto;
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        
+        img {
+            height: 70px;
+            width: auto;
+        }
+        
+    }
     
     .projects-preview {
     height: 100%;
@@ -22,8 +41,29 @@ html, body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
                 transform: translateZ(20px);
             }
         }
-    }    
+    }
+    
+    #menu {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        bottom: 50%;
+        
+        .list-group-item {
+            background-color: lightgray;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            border: none;
+            }
+        
+        .active {
+            background-color: dimgray;
+            
+        }
+    }
 }

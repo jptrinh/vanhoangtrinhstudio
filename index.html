@@ -8,25 +8,48 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="projects-preview">
+        <nav>
+            <a href="index.html">WORK</a>   
+            <img src="images/logo_vht.png" />
+            <a href="about.html">ABOUT</a>
+        </nav>  
+      
+       <div class="list-group" id="menu">
+           <a class="list-group-item" href="#projet1"></a>
+           <a class="list-group-item" href="#projet2"></a>
+           <a class="list-group-item" href="#projet3"></a>
+        </div>
+       
+       <div class="projects-preview">
             
-            <div class="project active">
-                <div data-tilt class="project-content">
-                   <h1>Projet 1</h1>
+            <div data-tilt class="project" id="projet1">
+                <div class="project-content">
+                   <h1>Rizenventure</h1>
+                   <h3>identité visuelle</h3>
                 </div>
-                
             </div>
-            <div class="project">
-                <h1>Projet 2</h1>
+            
+            <div data-tilt class="project" id="projet2">
+                <div class="project-content">
+                   <h1>Rizenventure</h1>
+                   <h3>identité visuelle</h3>
+                </div>
             </div>
-            <div class="project">
-                <h1>Projet 3</h1>
+            
+             <div data-tilt class="project" id="projet3">
+                <div class="project-content">
+                   <h1>Rizenventure</h1>
+                   <h3>identité visuelle</h3>
+                </div>
             </div>
+
             
         </div>
+    
     </div>
 
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/scrollreveal.min.js"></script>
 <script type="text/javascript" src="js/tilt.jquery.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
@@ -35,9 +58,15 @@ window.sr = ScrollReveal();
 sr.reveal('.project', { duration: 1000, reset: true});
 sr.reveal('.project h1', { delay: 400});
 
-$('.project-content').tilt({
+$('.project').tilt({
     maxTilt: 5,
+    perspective: 500,   // Transform perspective, the lower the more extreme the tilt gets.
+    easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
 });
+    
+    $('body').scrollspy({ 
+        target: '#menu', 
+        offset: 350 });
 </script>
 </body>
 </html>
