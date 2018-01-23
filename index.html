@@ -8,65 +8,106 @@
 </head>
 <body>
     <div class="container-fluid">
-        <nav>
+        <nav class="fixed-top">
             <a href="index.html">WORK</a>   
             <img src="images/logo_vht.png" />
             <a href="about.html">ABOUT</a>
         </nav>  
       
-       <div class="list-group" id="menu">
-           <a class="list-group-item" href="#projet1"></a>
-           <a class="list-group-item" href="#projet2"></a>
-           <a class="list-group-item" href="#projet3"></a>
+        <div class="list-group" id="menu" style="display: none">
+           <a class="list-group-item" href="#projet1">1</a>
+           <a class="list-group-item" href="#projet2">2</a>
+           <a class="list-group-item" href="#projet3">3</a>
+           
         </div>
+        
+        <div id="numcontainer">
+            <a id="numero"></a><span>/05</span>
+        </div>
+        
        
        <div class="projects-preview">
             
-            <div data-tilt class="project" id="projet1">
+            <div data-tilt class="project" id="projet1" data-numero="1">
+                <div data-tilt class="project-content">
+                   <h1>Rizenventure</h1>
+                </div>
+                <div class="project-info">
+                    <span>identité visuelle</span>
+                    <span>2017</span>
+                </div>
+                
+            </div>
+            
+            <div data-tilt class="project" id="projet2" data-numero="2">
                 <div class="project-content">
                    <h1>Rizenventure</h1>
                    <h3>identité visuelle</h3>
                 </div>
             </div>
             
-            <div data-tilt class="project" id="projet2">
+             <div data-tilt class="project" id="projet3" data-numero="3">
                 <div class="project-content">
                    <h1>Rizenventure</h1>
                    <h3>identité visuelle</h3>
                 </div>
-            </div>
-            
-             <div data-tilt class="project" id="projet3">
-                <div class="project-content">
-                   <h1>Rizenventure</h1>
-                   <h3>identité visuelle</h3>
-                </div>
-            </div>
-
-            
+            </div>  
         </div>
-    
     </div>
 
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/scrollreveal.min.js"></script>
 <script type="text/javascript" src="js/tilt.jquery.js"></script>
+<script type="text/javascript" src="js/countUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script>
-window.sr = ScrollReveal();
-sr.reveal('.project', { duration: 1000, reset: true});
-sr.reveal('.project h1', { delay: 400});
+    window.sr = ScrollReveal();
+    sr.reveal('.project', { duration: 1000, reset: true});
+    sr.reveal('.project h1', { delay: 400});
 
-$('.project').tilt({
-    maxTilt: 5,
-    perspective: 500,   // Transform perspective, the lower the more extreme the tilt gets.
-    easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
-});
+    $('.project').tilt({
+        maxTilt: 5,
+        perspective: 500,   // Transform perspective, the lower the more extreme the tilt gets.
+        easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+    });
+
+        $('body').scrollspy({ 
+            target: '#menu', 
+            offset: 350 });
+
     
-    $('body').scrollspy({ 
-        target: '#menu', 
-        offset: 350 });
+            var options = {
+                useEasing: true, 
+                useGrouping: true, 
+                separator: ',', 
+                decimal: '.', 
+                prefix: '0'
+            };
+        var mynum = document.querySelector('#numero');
+        var demo = new CountUp(mynum, 1, 1, 0, 1, options);
+        if (!demo.error) {
+          demo.start();
+        } else {
+          console.error(demo.error);
+        }
+
+    
+    
+    
+    $(window).scroll(function () {
+
+        
+        var current = document.querySelector('.list-group-item.active');
+        var current2 = current.innerHTML;
+        demo.start(function() {
+            demo.update(current2);
+        })
+        
+
+    });
+
+
 </script>
 </body>
 </html>

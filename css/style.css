@@ -16,6 +16,18 @@ body {
     .container-fluid nav img {
       height: 70px;
       width: auto; }
+  .container-fluid #numcontainer {
+    height: 100vh;
+    position: fixed;
+    right: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .container-fluid #numcontainer a {
+      font-size: 3rem;
+      font-family: serif;
+      vertical-align: baseline; }
   .container-fluid .projects-preview {
     height: 100%; }
     .container-fluid .projects-preview .project {
@@ -23,6 +35,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       transform-style: preserve-3d; }
       .container-fluid .projects-preview .project .project-content {
         height: 40%;
@@ -33,6 +46,9 @@ body {
         align-items: center;
         flex-direction: column;
         transform: translateZ(20px); }
+      .container-fluid .projects-preview .project .project-info {
+        display: flex;
+        justify-content: space-between; }
   .container-fluid #menu {
     position: fixed;
     right: 0;

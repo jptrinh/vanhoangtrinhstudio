@@ -24,6 +24,23 @@ body {
         
     }
     
+    #numcontainer {
+        height: 100vh;
+        position: fixed;
+        right: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+        a {
+            font-size: 3rem;
+            font-family: serif;
+            vertical-align: baseline;
+        }
+        
+    }
+    
     .projects-preview {
     height: 100%;
         
@@ -32,6 +49,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             transform-style: preserve-3d;
             
             .project-content {
@@ -43,6 +61,11 @@ body {
                 align-items: center;
                 flex-direction: column;
                 transform: translateZ(20px);
+            }
+            
+            .project-info {
+                display: flex;
+                justify-content: space-between;
             }
         }
     }
