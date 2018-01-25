@@ -28,7 +28,7 @@
        
        <div class="projects-preview">
             
-            <div data-tilt class="project" id="projet1" data-numero="1">
+            <div data-tilt class="project" id="projet1">
                 <div data-tilt class="project-content">
                    <h1>Rizenventure</h1>
                 </div>
@@ -36,13 +36,15 @@
                     <span>identité visuelle</span>
                     <span>2017</span>
                 </div>
-                
             </div>
             
-            <div data-tilt class="project" id="projet2" data-numero="2">
-                <div class="project-content">
+            <div data-tilt class="project" id="projet2">
+                <div data-tilt class="project-content">
                    <h1>Rizenventure</h1>
-                   <h3>identité visuelle</h3>
+                </div>
+                <div class="project-info">
+                    <span>identité visuelle</span>
+                    <span>2017</span>
                 </div>
             </div>
             
@@ -67,15 +69,14 @@
     sr.reveal('.project h1', { delay: 400});
 
     $('.project').tilt({
-        maxTilt: 3,
-        perspective: 2000,   // Transform perspective, the lower the more extreme the tilt gets.
+        maxTilt: 2,
+        perspective: 100000,   // Transform perspective, the lower the more extreme the tilt gets.
         easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
     });
 
         $('body').scrollspy({ 
             target: '#menu', 
             offset: 350 });
-
     
             var options = {
                 useEasing: true, 
@@ -84,8 +85,6 @@
                 decimal: '.', 
                 prefix: '0'
             };
-    
-    
     
     
         var total = $('.project').length;
@@ -102,9 +101,6 @@
         } else {
           console.error(demo.error);
         }
-
-    
-    
     
     $(window).scroll(function () {
 
