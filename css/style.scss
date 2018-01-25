@@ -6,10 +6,12 @@ body {
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
+    
 }
 
 .container-fluid {
     height: 100%; 
+    padding: 0;
     
     nav {
         margin: 2% auto;
@@ -53,19 +55,29 @@ body {
             transform-style: preserve-3d;
             
             .project-content {
-                height: 40%;
+                height: 60%;
                 width: 50%;
                 background-color: aqua;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                transform: translateZ(20px);
+                transform: translateZ(45px);
+                overflow: hidden;
+                
+                img {
+                    width: 100%;
+                }
+                
+                h1 {
+                    position: absolute;
+                    margin: auto;
+                }
             }
             
             .project-info {
-                display: flex;
-                justify-content: space-between;
+                position: relative;
+                top: 2%;
             }
         }
     }
@@ -88,5 +100,15 @@ body {
             background-color: dimgray;
             
         }
+    }
+    
+    // WORK PAGES
+    .img-top {
+        background-color: aquamarine;
+        height: 60%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

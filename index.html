@@ -28,32 +28,35 @@
        
        <div class="projects-preview">
             
-            <div data-tilt class="project" id="projet1">
-                <div data-tilt class="project-content">
-                   <h1>Rizenventure</h1>
-                </div>
-                <div class="project-info">
-                    <span>identité visuelle</span>
-                    <span>2017</span>
-                </div>
-            </div>
-            
-            <div data-tilt class="project" id="projet2">
-                <div data-tilt class="project-content">
-                   <h1>Rizenventure</h1>
-                </div>
-                <div class="project-info">
-                    <span>identité visuelle</span>
-                    <span>2017</span>
-                </div>
-            </div>
-            
-             <div data-tilt class="project" id="projet3" data-numero="3">
+            <div data-tilt data-tilt-perspective="2000" class="project" id="projet1">
                 <div class="project-content">
-                   <h1>Rizenventure</h1>
-                   <h3>identité visuelle</h3>
+                   <img src="images/rizenventure1.jpg" class="img-responsive"/>
+                    <h1><a href="work1.html">Rizenventure</a></h1>
                 </div>
-            </div>  
+                <div class="project-info">
+                    <p>identité visuelle</p>
+                </div>
+            </div>
+            
+            <div data-tilt data-tilt-perspective="2000" class="project" id="projet2">
+                <div class="project-content">
+                   <img src="images/rizenventure1.jpg" class="img-responsive"/>
+                    <h1><a href="work1.html">Rizenventure</a></h1>
+                </div>
+                <div class="project-info">
+                    <p>identité visuelle</p>
+                </div>
+            </div>
+            
+            <div data-tilt data-tilt-perspective="2000" class="project" id="projet3">
+                <div class="project-content">
+                   <img src="images/rizenventure1.jpg" class="img-responsive"/>
+                    <h1><a href="work1.html">Rizenventure</a></h1>
+                </div>
+                <div class="project-info">
+                    <p>identité visuelle</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -67,12 +70,6 @@
     window.sr = ScrollReveal();
     sr.reveal('.project', { duration: 1000, reset: true});
     sr.reveal('.project h1', { delay: 400});
-
-    $('.project').tilt({
-        maxTilt: 2,
-        perspective: 100000,   // Transform perspective, the lower the more extreme the tilt gets.
-        easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
-    });
 
         $('body').scrollspy({ 
             target: '#menu', 

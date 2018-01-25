@@ -7,7 +7,8 @@ body {
   overflow-y: scroll; }
 
 .container-fluid {
-  height: 100%; }
+  height: 100%;
+  padding: 0; }
   .container-fluid nav {
     margin: 2% auto;
     display: flex;
@@ -38,17 +39,23 @@ body {
       flex-direction: column;
       transform-style: preserve-3d; }
       .container-fluid .projects-preview .project .project-content {
-        height: 40%;
+        height: 60%;
         width: 50%;
         background-color: aqua;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        transform: translateZ(20px); }
+        transform: translateZ(45px);
+        overflow: hidden; }
+        .container-fluid .projects-preview .project .project-content img {
+          width: 100%; }
+        .container-fluid .projects-preview .project .project-content h1 {
+          position: absolute;
+          margin: auto; }
       .container-fluid .projects-preview .project .project-info {
-        display: flex;
-        justify-content: space-between; }
+        position: relative;
+        top: 2%; }
   .container-fluid #menu {
     position: fixed;
     right: 0;
@@ -62,5 +69,12 @@ body {
       border: none; }
     .container-fluid #menu .active {
       background-color: dimgray; }
+  .container-fluid .img-top {
+    background-color: aquamarine;
+    height: 60%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
