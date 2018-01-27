@@ -43,8 +43,25 @@ body {
         
     }
     
+    
+    
     .projects-preview {
     height: 100%;
+        
+        .presentation {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 60%;
+            
+            .block {
+                height: 50%;
+                width: 100%;
+                background-color: aliceblue;
+        }
+            }
+
         
         .project {
             height: 100%;

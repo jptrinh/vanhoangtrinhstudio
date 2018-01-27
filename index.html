@@ -15,6 +15,7 @@
         </nav>  
       
         <div class="list-group" id="menu" style="display: none">
+          <a class="list-group-item" href="#projet0">0</a>
            <a class="list-group-item" href="#projet1">1</a>
            <a class="list-group-item" href="#projet2">2</a>
            <a class="list-group-item" href="#projet3">3</a>
@@ -27,6 +28,13 @@
         
        
        <div class="projects-preview">
+            <div class="project" id="projet0">
+                <div class="presentation">
+                    <div class="block"></div>
+                    <h1>Hello! My name is Hoang. I'am a graphic designer.</h1>
+                </div>
+                
+            </div>
             
             <div data-tilt data-tilt-perspective="2000" class="project" id="projet1">
                 <div class="project-content">
@@ -58,6 +66,15 @@
                 </div>
             </div>
         </div>
+        <div class="otherwork">
+            <div class="card-deck">
+                <div class="card"><p>hello</p></div>
+                <div class="card"><p>hello</p></div>
+                <div class="card"><p>hello</p></div>
+                <div class="card"><p>hello</p></div>
+                <div class="card"><p>hello</p></div>       
+            </div>
+        </div>
     </div>
 
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -86,7 +103,7 @@
     
         var total = $('.project').length;
         var mydiv = document.createElement('span');
-        mydiv.innerHTML = total;
+        mydiv.innerHTML = total-1;
     
         var totaldiv = document.getElementById('total');
         totaldiv.appendChild(mydiv);

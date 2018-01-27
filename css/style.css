@@ -31,6 +31,16 @@ body {
       vertical-align: baseline; }
   .container-fluid .projects-preview {
     height: 100%; }
+    .container-fluid .projects-preview .presentation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 60%; }
+      .container-fluid .projects-preview .presentation .block {
+        height: 50%;
+        width: 100%;
+        background-color: aliceblue; }
     .container-fluid .projects-preview .project {
       height: 100%;
       display: flex;
