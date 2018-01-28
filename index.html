@@ -10,24 +10,17 @@
     <div class="container">
         <nav class="fixed-top">
             <a href="index.html"><img src="images/logo_vht.png" /></a>
-            <a href="index.html/#projects-preview">PORTFOLIO</a>   
-            <a href="about.html">ABOUT</a>
+            <div>
+                <a href="index.html#projects-preview">my work</a>
+                <a href="about.html">about me</a>
+                <a href="https://www.behance.net/jpvhtrinh5d51"><img class="social" src="images/behance.svg" /></a>
+                <a href="https://www.linkedin.com/in/hoang-trinh-6a8b76149/"><img class="social" src="images/linkedin.svg" /></a>
+            </div>
+            
         </nav>  
-      
-        <!--<div class="list-group" id="menu">
-          <a class="list-group-item" href="#projet0">0</a>
-           <a class="list-group-item" href="#projet1">1</a>
-           <a class="list-group-item" href="#projet2">2</a>
-           <a class="list-group-item" href="#projet3">3</a>
-           
-        </div>
-        
-         <div id="numcontainer" class="d-none d-md-block">
-            <a id="numero"></a><span id="total"></span>
-        </div> -->
         
         <div class="presentation">
-            <div class="block"></div>
+            <div data-tilt data-tilt-perspective="2000" class="block"></div>
                 <h1>Hello! My name is Hoang. I'am a graphic designer.</h1>
                 <p>Check out my featured work below !</p>
             <a href="#projects-preview"><button class="btn primary-btn">See</button></a>
@@ -80,53 +73,11 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/scrollreveal.min.js"></script>
 <script type="text/javascript" src="js/tilt.jquery.js"></script>
-<script type="text/javascript" src="js/countUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script>
     window.sr = ScrollReveal();
     sr.reveal('.project', { duration: 1000, reset: true});
     sr.reveal('.project h1', { delay: 400});
-
-        /*$('body').scrollspy({ 
-            target: '#menu', 
-            offset: 350 });
-    
-            var options = {
-                useEasing: true, 
-                useGrouping: true, 
-                separator: ',', 
-                decimal: '.', 
-                prefix: '0'
-            };
-    
-    
-        var total = $('.project').length;
-        var mydiv = document.createElement('span');
-        mydiv.innerHTML = total-1;
-    
-        var totaldiv = document.getElementById('total');
-        totaldiv.appendChild(mydiv);
-    
-        var mynum = document.querySelector('#numero');
-        var demo = new CountUp(mynum, 1, 1, 0, 1, options);
-        if (!demo.error) {
-          demo.start();
-        } else {
-          console.error(demo.error);
-        }
-    
-    $(window).scroll(function () {
-
-        
-        var current = document.querySelector('.list-group-item.active');
-        var current2 = current.innerHTML;
-        demo.start(function() {
-            demo.update(current2);
-        })
-        
-
-    });*/
-
 
 </script>
 </body>

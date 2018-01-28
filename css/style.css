@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans");
 html, body {
   height: 100%; }
 
@@ -5,13 +6,30 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: scroll; }
+  body h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; }
+  body p {
+    font-family: 'Open Sans', sans-serif; }
 
 .container {
   height: 100%;
   padding: 0; }
-  .container nav img {
-    height: 70px;
-    width: auto; }
+  .container nav {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 2rem auto; }
+    .container nav div {
+      width: 20%;
+      display: flex;
+      justify-content: space-around; }
+    .container nav img {
+      height: 70px;
+      width: auto; }
+    .container nav .social {
+      width: 25px;
+      height: 25px; }
   .container #numcontainer {
     height: 100vh;
     position: fixed;
