@@ -6,13 +6,13 @@ body {
   overflow-x: hidden;
   overflow-y: scroll; }
 
-.container-fluid {
+.container {
   height: 100%;
   padding: 0; }
-  .container-fluid nav img {
+  .container nav img {
     height: 70px;
     width: auto; }
-  .container-fluid #numcontainer {
+  .container #numcontainer {
     height: 100vh;
     position: fixed;
     right: 5%;
@@ -20,56 +20,41 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center; }
-    .container-fluid #numcontainer a {
+    .container #numcontainer a {
       font-size: 3rem;
       font-family: serif;
       vertical-align: baseline; }
-  .container-fluid .projects-preview {
-    height: 100%; }
-    .container-fluid .projects-preview .presentation {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 100%;
-      width: 60%; }
-      .container-fluid .projects-preview .presentation .block {
-        height: 50%;
-        width: 100%;
-        background-color: aliceblue; }
-    .container-fluid .projects-preview .project {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      transform-style: preserve-3d; }
-      .container-fluid .projects-preview .project .project-content {
-        height: 60%;
-        width: 50%;
-        background-color: aqua;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        transform: translateZ(45px);
-        overflow: hidden; }
-        .container-fluid .projects-preview .project .project-content img {
-          width: 100%; }
-        .container-fluid .projects-preview .project .project-content h1 {
-          position: absolute;
-          margin: auto; }
-      .container-fluid .projects-preview .project .project-info {
-        position: relative;
-        top: 2%; }
-  .container-fluid #menu {
+  .container .presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    margin: auto; }
+    .container .presentation .block {
+      height: 40%;
+      width: 40%;
+      background-color: aliceblue; }
+  .container .projects-preview .project {
+    height: 60%;
+    transform-style: preserve-3d; }
+    .container .projects-preview .project .img-content {
+      width: auto;
+      height: 80%;
+      overflow: hidden; }
+      .container .projects-preview .project .img-content h2 {
+        position: absolute;
+        bottom: 0;
+        color: aliceblue; }
+  .container #menu {
     display: none; }
-  .container-fluid .otherwork {
+  .container .otherwork {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
-  .container-fluid .img-top {
+  .container .img-top {
     background-color: aquamarine;
     height: 60%;
     margin: 0;
