@@ -10,7 +10,7 @@
     <div class="container">
         <nav class="fixed-top">
             <a href="index.html"><img src="images/logo_vht.png" /></a>
-            <a href="index.html">PORTFOLIO</a>   
+            <a href="index.html/#projects-preview">PORTFOLIO</a>   
             <a href="about.html">ABOUT</a>
         </nav>  
       
@@ -30,14 +30,14 @@
             <div class="block"></div>
                 <h1>Hello! My name is Hoang. I'am a graphic designer.</h1>
                 <p>Check out my featured work below !</p>
-                <button class="btn primary-btn">See</button>
+            <a href="#projects-preview"><button class="btn primary-btn">See</button></a>
             </div>
         
-        <div class="projects-preview">
+        <div class="projects-preview" id="projects-preview">
             <div class="row project mt-3" id="projet1">
                <div data-tilt data-tilt-perspective="2000" class="col-md-6 col-12 img-content">
                     <img src="images/rizenventure1.jpg" class="img-fluid"/>
-                   <h2 class="d-inline d-md-none"><a href="work1.html">Rizenventure</a> | identité visuelle</h2>
+                   <h2 class="d-inline d-md-none ml-2"><a href="work1.html">Rizenventure</a>  <span style="font-size: 1rem;">| identité visuelle</span></h2>
                </div>
                <div class="col-md-6 col-12 project-info d-none d-md-block">
                    <h1><a href="work1.html">Rizenventure</a></h1>
@@ -69,6 +69,10 @@
             </div>
         </div>
         
+        <footer class="text-center mt-5">
+            <p>Copyright Van Hoang TRINH 2018 - jpvh.trinh@gmail.com</p>
+        </footer>
+        
 
     </div>
 
@@ -83,7 +87,7 @@
     sr.reveal('.project', { duration: 1000, reset: true});
     sr.reveal('.project h1', { delay: 400});
 
-        $('body').scrollspy({ 
+        /*$('body').scrollspy({ 
             target: '#menu', 
             offset: 350 });
     
@@ -121,7 +125,7 @@
         })
         
 
-    });
+    });*/
 
 
 </script>
