@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <nav class="fixed-top">
             <a href="index.html"><img src="images/logo_vht.png" /></a>
-            <a href="index.html">PORTFOLIO</a>   
+            <a href="index.html/#projects-preview">PORTFOLIO</a>   
             <a href="about.html">ABOUT</a>
         </nav>  
       
-        <div class="list-group" id="menu">
+        <!--<div class="list-group" id="menu">
           <a class="list-group-item" href="#projet0">0</a>
            <a class="list-group-item" href="#projet1">1</a>
            <a class="list-group-item" href="#projet2">2</a>
@@ -22,60 +22,56 @@
            
         </div>
         
-        <div id="numcontainer">
+         <div id="numcontainer" class="d-none d-md-block">
             <a id="numero"></a><span id="total"></span>
+        </div> -->
+        
+        <div class="presentation">
+            <div class="block"></div>
+                <h1>Hello! My name is Hoang. I'am a graphic designer.</h1>
+                <p>Check out my featured work below !</p>
+            <a href="#projects-preview"><button class="btn primary-btn">See</button></a>
+            </div>
+        
+        <div class="projects-preview" id="projects-preview">
+            <div class="row project mt-3" id="projet1">
+               <div data-tilt data-tilt-perspective="2000" class="col-md-6 col-12 img-content">
+                    <img src="images/rizenventure1.jpg" class="img-fluid"/>
+                   <h2 class="d-inline d-md-none ml-2"><a href="work1.html">Rizenventure</a>  <span style="font-size: 1rem;">| identité visuelle</span></h2>
+               </div>
+               <div class="col-md-6 col-12 project-info d-none d-md-block">
+                   <h1><a href="work1.html">Rizenventure</a></h1>
+                    <p>identité visuelle</p>
+                    <p>nsdflknslfknlkfjnlkj jrfmqljfql slrgnlsngljrng lkrg,lsgrsl ljrngeksrjngksjn lsrnglr</p>
+               </div>
+            </div>
+            
+            <div class="row project mt-3" id="projet1">
+               <div data-tilt data-tilt-perspective="2000" class="col-md-6 col-12 img-content">
+                    <img src="images/rizenventure1.jpg" class="img-fluid"/>
+               </div>
+               <div class="col-md-6 col-12 project-info d-none d-md-block">
+                   <h1><a href="work1.html">Rizenventure</a></h1>
+                    <p>identité visuelle</p>
+                    <p>nsdflknslfknlkfjnlkj jrfmqljfql slrgnlsngljrng lkrg,lsgrsl ljrngeksrjngksjn lsrnglr</p>
+               </div>
+            </div>
+            
+            <div class="row project mt-3" id="projet1">
+               <div data-tilt data-tilt-perspective="2000" class="col-md-6 col-12 img-content">
+                    <img src="images/rizenventure1.jpg" class="img-fluid"/>
+               </div>
+               <div class="col-md-6 col-12 project-info d-none d-md-block">
+                   <h1><a href="work1.html">Rizenventure</a></h1>
+                    <p>identité visuelle</p>
+                    <p>nsdflknslfknlkfjnlkj jrfmqljfql slrgnlsngljrng lkrg,lsgrsl ljrngeksrjngksjn lsrnglr</p>
+               </div>
+            </div>
         </div>
         
-       
-       <div class="projects-preview">
-            <div class="project" id="projet0">
-                <div class="presentation">
-                    <div>
-                        <div class="block"></div>
-                        <h1>Hello! My name is Hoang. I'am a graphic designer.</h1>
-                    </div>
-                    
-                    <p>Check out my featured work below !</p>
-                    <button class="btn primary-btn">See</button>
-                </div>
-                
-            </div>
-            
-            <div data-tilt data-tilt-perspective="2000" class="project" id="projet1">
-                <div class="project-content">
-                   <img src="images/rizenventure1.jpg" class="img-responsive"/>
-                    <h1><a href="work1.html">Rizenventure</a></h1>
-                </div>
-                <div class="project-info">
-                    <p>identité visuelle</p>
-                </div>
-            </div>
-            
-            <div data-tilt data-tilt-perspective="2000" class="project" id="projet2">
-                <div class="project-content">
-                   <img src="images/rizenventure1.jpg" class="img-responsive"/>
-                    <h1><a href="work1.html">Rizenventure</a></h1>
-                </div>
-                <div class="project-info">
-                    <p>identité visuelle</p>
-                </div>
-            </div>
-            
-            <div data-tilt data-tilt-perspective="2000" class="project" id="projet3">
-                <div class="project-content">
-                   <img src="images/rizenventure1.jpg" class="img-responsive"/>
-                    <h1><a href="work1.html">Rizenventure</a></h1>
-                </div>
-                <div class="project-info">
-                    <p>identité visuelle</p>
-                </div>
-            </div>
-            
-            <div class="otherwork">
-                <p>Wanna see more ? Check my other works and exploration here </p>
-                <button class="btn">portfolio</button>
-            </div>
-        </div>
+        <footer class="text-center mt-5">
+            <p>Copyright Van Hoang TRINH 2018 - jpvh.trinh@gmail.com</p>
+        </footer>
         
 
     </div>
@@ -91,7 +87,7 @@
     sr.reveal('.project', { duration: 1000, reset: true});
     sr.reveal('.project h1', { delay: 400});
 
-        $('body').scrollspy({ 
+        /*$('body').scrollspy({ 
             target: '#menu', 
             offset: 350 });
     
@@ -129,7 +125,7 @@
         })
         
 
-    });
+    });*/
 
 
 </script>
