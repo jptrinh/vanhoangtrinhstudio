@@ -6,7 +6,6 @@ body {
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
-    
 }
 
 .container-fluid {
@@ -14,10 +13,7 @@ body {
     padding: 0;
     
     nav {
-        margin: 2% auto;
-        display: flex;
-        justify-content: space-around;
-        width: 60%;
+
         
         img {
             height: 70px;
@@ -52,6 +48,7 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
                 height: 100%;
                 width: 60%;
             
@@ -100,23 +97,14 @@ body {
     }
     
     #menu {
-        position: fixed;
-        right: 0;
-        top: 50%;
-        bottom: 50%;
-        
-        .list-group-item {
-            background-color: lightgray;
-            height: 10px;
-            width: 10px;
-            border-radius: 50%;
-            border: none;
-            }
-        
-        .active {
-            background-color: dimgray;
-            
-        }
+        display: none;
+    }
+    
+    .otherwork {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     // WORK PAGES

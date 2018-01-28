@@ -9,14 +9,9 @@ body {
 .container-fluid {
   height: 100%;
   padding: 0; }
-  .container-fluid nav {
-    margin: 2% auto;
-    display: flex;
-    justify-content: space-around;
-    width: 60%; }
-    .container-fluid nav img {
-      height: 70px;
-      width: auto; }
+  .container-fluid nav img {
+    height: 70px;
+    width: auto; }
   .container-fluid #numcontainer {
     height: 100vh;
     position: fixed;
@@ -35,6 +30,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       height: 100%;
       width: 60%; }
       .container-fluid .projects-preview .presentation .block {
@@ -67,18 +63,12 @@ body {
         position: relative;
         top: 2%; }
   .container-fluid #menu {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    bottom: 50%; }
-    .container-fluid #menu .list-group-item {
-      background-color: lightgray;
-      height: 10px;
-      width: 10px;
-      border-radius: 50%;
-      border: none; }
-    .container-fluid #menu .active {
-      background-color: dimgray; }
+    display: none; }
+  .container-fluid .otherwork {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .container-fluid .img-top {
     background-color: aquamarine;
     height: 60%;
