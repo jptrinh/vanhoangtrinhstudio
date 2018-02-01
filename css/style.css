@@ -20,10 +20,8 @@ body {
     justify-content: space-between;
     width: 95%;
     margin: 2rem auto; }
-    .container nav div {
-      width: 20%;
-      display: flex;
-      justify-content: space-around; }
+    .container nav div a {
+      margin-right: 2rem; }
     .container nav img {
       height: 70px;
       width: auto; }
@@ -57,21 +55,21 @@ body {
   .container .projects-preview .project {
     height: 60%;
     transform-style: preserve-3d; }
-    .container .projects-preview .project .img-content {
-      width: auto;
-      height: 80%;
-      overflow: hidden; }
-      .container .projects-preview .project .img-content h2 {
-        position: absolute;
-        bottom: 0;
-        color: aliceblue; }
+    .container .projects-preview .project .project-title {
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+      font-size: 1.3rem; }
+    .container .projects-preview .project .block-title {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 100%;
+      height: 13%;
+      margin: 0; }
   .container #menu {
     display: none; }
-  .container .otherwork {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
   .container .img-top {
     background-color: aquamarine;
     height: 60%;

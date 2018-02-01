@@ -29,9 +29,9 @@ body {
         margin: 2rem auto;
         
         div {
-            width: 20%;
-            display: flex;
-            justify-content: space-around;
+            a {
+                margin-right: 2rem;
+            }
         }
         
         img {
@@ -85,30 +85,26 @@ body {
             height: 60%;
             transform-style: preserve-3d;
             
-            .img-content {
-                width: auto;
-                height: 80%;
-                overflow: hidden;
-                
-                h2 {
-                    position: absolute;
-                    bottom: 0;
-                    color: aliceblue;
-                }
+            .project-title {
+                position: absolute;
+                bottom: 0;
+                margin: 0;
+                padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+                font-size: 1.3rem;
             }
-        
+            .block-title {
+                position: absolute;
+                bottom: 0;
+                background-color: rgba(255, 255, 255, 0.5);
+                width: 100%;
+                height: 13%;
+                margin: 0;
+            }
         }
     }
     
     #menu {
         display: none;
-    }
-    
-    .otherwork {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     
     // WORK PAGES
