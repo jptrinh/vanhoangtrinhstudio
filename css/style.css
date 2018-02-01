@@ -15,19 +15,14 @@ body {
 .container {
   height: 100%;
   padding: 0; }
-  .container nav {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin: 2rem auto; }
-    .container nav div a {
-      margin-right: 2rem; }
-    .container nav img {
-      height: 70px;
-      width: auto; }
-    .container nav .social {
-      width: 25px;
-      height: 25px; }
+  .container nav div a {
+    margin-right: 2rem; }
+  .container nav img {
+    height: 70px;
+    width: auto; }
+  .container nav .social {
+    width: 25px;
+    height: 25px; }
   .container #numcontainer {
     height: 100vh;
     position: fixed;
