@@ -39,7 +39,8 @@ body {
   .container-fluid .presentation {
     width: 100%;
     margin: auto;
-    background-color: bisque; }
+    background-color: bisque;
+    position: relative; }
     .container-fluid .presentation .white {
       position: absolute;
       border: 10px solid white;
