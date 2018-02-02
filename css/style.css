@@ -37,18 +37,16 @@ body {
       font-family: serif;
       vertical-align: baseline; }
   .container-fluid .presentation {
-    height: 100%;
     width: 100%;
     margin: auto;
     background-color: bisque; }
-    .container-fluid .presentation .content-photo {
-      height: 80%;
+    .container-fluid .presentation .container-photo {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .container-fluid .presentation .content-photo .img-fluid {
-        max-height: 100%;
-        width: auto; }
+      .container-fluid .presentation .container-photo .content-photo {
+        height: 80%;
+        margin-bottom: 3rem; }
     .container-fluid .presentation .text-presentation {
       display: flex;
       flex-direction: column;

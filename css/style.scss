@@ -61,22 +61,22 @@ body {
     }
     
     .presentation {
-        height: 100%;
         width: 100%;
         margin: auto;
         background-color: bisque;
         
-        .content-photo {
-            height: 80%;
+        .container-photo{
             display: flex;
             justify-content: center;
             align-items: center;
             
-            .img-fluid {
-                max-height: 100%;
-                width: auto;
+            .content-photo {
+            height: 80%;
+            margin-bottom: 3rem;
+
             }
         }
+        
         
         .text-presentation {
             display: flex;
