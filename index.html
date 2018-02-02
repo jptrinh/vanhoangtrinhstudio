@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,16 +30,28 @@
                 </li>
             </ul>
            </div>
-            
-            
         </nav>  
         
         <div class="presentation">
-            <div data-tilt data-tilt-perspective="2000" class="block"></div>
-                <h1>Hello! My name is Hoang. I'am a graphic designer.</h1>
-                <p>Check out my featured work below !</p>
-            <a href="#projects-preview"><button class="btn primary-btn">See</button></a>
+            <div class="row">
+                <div class="col col-12 col-md-6">
+                  <div class="content-photo">
+                      <img src="images/presentation.png" alt="picture vanhoangtrinh" class="img-fluid" data-tilt data-tilt-perspective="2000"/>
+                  </div>
+                   
+                </div>
+                <div class="col col-12 col-md-6 text-presentation">
+                   <div>
+                       <h1>Hello! My name is Hoang. I'm a graphic designer.</h1>
+                    <p>Check out what i like to do bellow !</p>
+                    <a href="#projects-preview"><button class="btn primary-btn">See</button></a>
+                   </div>
+                    
+                </div>
+                
             </div>
+            
+        </div>
         
         <div class="projects-preview" id="projects-preview">
             

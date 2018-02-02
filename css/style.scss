@@ -8,6 +8,7 @@ body {
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
+    padding-top: 6.7%;
     h1 {
         font-family: 'Lato', sans-serif;
         font-weight: 700;
@@ -18,7 +19,7 @@ body {
     }
 }
 
-.container {
+.container-fluid {
     height: 100%; 
     padding: 0;
     
@@ -31,7 +32,7 @@ body {
         }
         
         img {
-            height: 70px;
+            height: 65px;
             width: auto;
         }
         
@@ -60,23 +61,31 @@ body {
     }
     
     .presentation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         height: 100%;
-        width: 60%;
+        width: 100%;
         margin: auto;
+        background-color: bisque;
+        
+        .content-photo {
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
-            .block {
-                height: 40%;
-                width: 40%;
-                background-color: aliceblue;
+            .img-fluid {
+                max-height: 100%;
+                width: auto;
             }
+        }
+        
+        .text-presentation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     
     .projects-preview {
-         
         .project {
             height: 60%;
             transform-style: preserve-3d;

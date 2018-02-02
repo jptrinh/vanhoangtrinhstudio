@@ -5,25 +5,26 @@ html, body {
 body {
   position: relative;
   overflow-x: hidden;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  padding-top: 6.7%; }
   body h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 700; }
   body p {
     font-family: 'Open Sans', sans-serif; }
 
-.container {
+.container-fluid {
   height: 100%;
   padding: 0; }
-  .container nav div a {
+  .container-fluid nav div a {
     margin-right: 2rem; }
-  .container nav img {
-    height: 70px;
+  .container-fluid nav img {
+    height: 65px;
     width: auto; }
-  .container nav .social {
+  .container-fluid nav .social {
     width: 25px;
     height: 25px; }
-  .container #numcontainer {
+  .container-fluid #numcontainer {
     height: 100vh;
     position: fixed;
     right: 5%;
@@ -31,41 +32,46 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center; }
-    .container #numcontainer a {
+    .container-fluid #numcontainer a {
       font-size: 3rem;
       font-family: serif;
       vertical-align: baseline; }
-  .container .presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  .container-fluid .presentation {
     height: 100%;
-    width: 60%;
-    margin: auto; }
-    .container .presentation .block {
-      height: 40%;
-      width: 40%;
-      background-color: aliceblue; }
-  .container .projects-preview .project {
+    width: 100%;
+    margin: auto;
+    background-color: bisque; }
+    .container-fluid .presentation .content-photo {
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container-fluid .presentation .content-photo .img-fluid {
+        max-height: 100%;
+        width: auto; }
+    .container-fluid .presentation .text-presentation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+  .container-fluid .projects-preview .project {
     height: 60%;
     transform-style: preserve-3d; }
-    .container .projects-preview .project .project-title {
+    .container-fluid .projects-preview .project .project-title {
       position: absolute;
       bottom: 0;
       margin: 0;
       padding: 0.3rem 0.3rem 0.3rem 0.3rem;
       font-size: 1.3rem; }
-    .container .projects-preview .project .block-title {
+    .container-fluid .projects-preview .project .block-title {
       position: absolute;
       bottom: 0;
       background-color: rgba(255, 255, 255, 0.5);
       width: 100%;
       height: 13%;
       margin: 0; }
-  .container #menu {
+  .container-fluid #menu {
     display: none; }
-  .container .img-top {
+  .container-fluid .img-top {
     background-color: aquamarine;
     height: 60%;
     margin: 0;
