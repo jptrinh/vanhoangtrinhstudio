@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans'); 
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700'); 
 
 html, body {
     height: 100%; 
@@ -28,7 +28,26 @@ body {
         div {
             a {
                 margin-right: 2rem;
+                color: grey;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                &:hover {
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+                
+                
             }
+            
+            li {
+                height: 2.5rem;
+            }
+            
+            .active {
+                    text-decoration: underline;
+                    color: black;
+                    font-weight: 700;
+                }
         }
         
         img {
@@ -39,23 +58,6 @@ body {
         .social {
             width: 25px;
             height: 25px;
-        }
-        
-    }
-    
-    #numcontainer {
-        height: 100vh;
-        position: fixed;
-        right: 5%;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        
-        a {
-            font-size: 3rem;
-            font-family: serif;
-            vertical-align: baseline;
         }
         
     }

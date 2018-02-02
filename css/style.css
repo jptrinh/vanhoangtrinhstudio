@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700");
 html, body {
   height: 100%; }
 
@@ -17,25 +17,25 @@ body {
   height: 100%;
   padding: 0; }
   .container-fluid nav div a {
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; }
+    .container-fluid nav div a:hover {
+      font-weight: 700;
+      text-decoration: none; }
+  .container-fluid nav div li {
+    height: 2.5rem; }
+  .container-fluid nav div .active {
+    text-decoration: underline;
+    color: black;
+    font-weight: 700; }
   .container-fluid nav img {
     height: 65px;
     width: auto; }
   .container-fluid nav .social {
     width: 25px;
     height: 25px; }
-  .container-fluid #numcontainer {
-    height: 100vh;
-    position: fixed;
-    right: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; }
-    .container-fluid #numcontainer a {
-      font-size: 3rem;
-      font-family: serif;
-      vertical-align: baseline; }
   .container-fluid .presentation {
     width: 100%;
     margin: auto;
