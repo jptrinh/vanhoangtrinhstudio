@@ -40,6 +40,11 @@ body {
     width: 100%;
     margin: auto;
     background-color: bisque; }
+    .container-fluid .presentation .white {
+      position: absolute;
+      border: 10px solid white;
+      height: 100%;
+      width: 100%; }
     .container-fluid .presentation .container-photo {
       display: flex;
       justify-content: center;
@@ -47,6 +52,8 @@ body {
       .container-fluid .presentation .container-photo .content-photo {
         height: 80%;
         margin-bottom: 3rem; }
+        .container-fluid .presentation .container-photo .content-photo #photoofme {
+          height: 400px; }
     .container-fluid .presentation .text-presentation {
       display: flex;
       flex-direction: column;

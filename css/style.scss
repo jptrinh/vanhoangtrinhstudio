@@ -65,6 +65,13 @@ body {
         margin: auto;
         background-color: bisque;
         
+        .white {
+            position: absolute;
+            border: 10px solid white;
+            height: 100%;
+            width: 100%;
+        }
+        
         .container-photo{
             display: flex;
             justify-content: center;
@@ -73,7 +80,10 @@ body {
             .content-photo {
             height: 80%;
             margin-bottom: 3rem;
-
+            
+                #photoofme {
+                    height: 400px;
+                }
             }
         }
         
