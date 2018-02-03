@@ -5,8 +5,7 @@ html, body {
 body {
   position: relative;
   overflow-x: hidden;
-  overflow-y: scroll;
-  padding-top: 6.7%; }
+  overflow-y: scroll; }
   body h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 700; }
