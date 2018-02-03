@@ -54,7 +54,8 @@ body {
         height: 80%;
         margin-bottom: 3rem; }
         .container-fluid .presentation .container-photo .content-photo #photoofme {
-          height: 400px; }
+          height: 400px;
+          z-index: 100; }
     .container-fluid .presentation .text-presentation {
       display: flex;
       flex-direction: column;
